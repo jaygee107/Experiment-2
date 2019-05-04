@@ -1,0 +1,64 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    char Package_Type;
+    int A, B, C;
+    double Hours, H1, H2;
+    
+    A = 995;
+    B = 1495;
+    C = 1995;
+    
+    cout << "Please Enter Package Type:" << endl;
+    cin >> Package_Type;
+
+   switch ( Package_Type )
+    {
+        case 'A':
+        case 'a':
+        
+            cout << "The availed package is Package A!" << endl;
+            cout << "Please enter the number of hours of your consumption" << endl;
+            cin >> Hours;
+            
+            if (Hours <= 10)
+                cout << "Your balance would be: Php " << A << endl;
+            else
+            {
+                H1 = (Hours - 10) * 20 + A;
+                cout << "Your balance would be: Php " << H1 << endl;
+            }
+            break;
+            
+        case 'B' :
+        case 'b' :
+        
+            cout << "The availed package is Package B!" << endl;
+            cout << "Please enter the number of hours of your consumption" << endl;
+            cin >> Hours;
+            
+            if (Hours <= 20)
+                cout << "Your balance would be: Php " << B << endl;
+            else
+            {
+                H2 = (Hours - 20) * 10 + B;
+                cout << "Your balance would be: Php " << H2 << endl;
+            }
+            break;
+            
+        case 'C' :
+        case 'c' :
+            {
+            cout << "The availed package is Package C!" << endl;
+            cout << "Your balance would be: Php " << C << endl;
+            }
+            break;
+            
+        default:
+            cout << "Please choose from letters A-C only." << endl;
+    }
+    
+    return 0;
+}
