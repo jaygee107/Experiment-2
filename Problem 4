@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    int F, S, T;
+    
+    
+    cout << "Please enter three numbers" << endl;
+    
+    cout << "Please enter the first number: " << endl;
+    cin >> F;
+    
+    cout << "Please enter the second number: " << endl;
+    cin >> S;
+    
+    cout << "Please enter the third number: " << endl;
+    cin >> T;
+    
+    if ( F < S && S > T )
+    {
+        cout << "The largest number is: " << S << endl;
+    }
+    else if ( F > S && F > T )
+    {
+        cout << "The largest number is: " << F << endl;
+    }
+    else
+        cout << "The largest number is: " << T << endl;
+    
+    return 0;
+}
+
+
