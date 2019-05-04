@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+{
+    double ConsCharge, Gal, bal, WD, LC;
+    ConsCharge = 1.10;
+    WD = 35;
+    LC = 20;
+    
+    cout << "Please enter the amount of water used in gallons" << endl;
+    cin >> Gal;
+    
+    cout << "Please enter your unpaid balance" << endl;
+    cin >> bal;
+    
+    if (bal <= 0 )
+        cout << "Your balance for next month is: Php " << WD + (Gal * ConsCharge) << endl;
+    
+    else
+        cout << "Your balance for next month is: Php " << (WD + (Gal * ConsCharge)) + LC + bal << endl;
+    
+    return 0;
+
+}
