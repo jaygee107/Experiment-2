@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+int main ()
+
+{
+    int x = 1;
+    cout << "Intitialize counting... " << endl;
+    
+    for ( int i = 1; i <= 20; i ++ )
+    {
+     if (x < 10)
+        {
+             cout << x++ << "," << endl;
+        }
+    else
+        {    cout << x << "," << endl;
+             x= x + 2;
+        }
+    
+    }
+    return 0;
+}
+
+
